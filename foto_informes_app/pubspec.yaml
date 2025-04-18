@@ -31,9 +31,24 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.8
+  # Para seleccionar imágenes de la galería y tomar fotos
+  image_picker: ^1.0.7 # Revisa la última versión en pub.dev
+  # Para acceder al sistema de archivos del dispositivo
+  path_provider: ^2.1.2 # Revisa la última versión en pub.dev
+  # Para manejar permisos (cámara, almacenamiento)
+  permission_handler: ^11.3.1 # Revisa la última versión en pub.dev
+  # Para crear archivos Word (buscar una opción, docx_template es una posibilidad)
+  # OJO: La generación de Word puede ser compleja. Empecemos sin él y lo añadimos luego si es viable.
+  # docx_template: ^0.6.0 # Ejemplo, investigar viabilidad
+  # Para crear archivos ZIP
+  archive: ^3.4.10 # Revisa la última versión en pub.dev
+  # Para formatear fechas (usado para nombres de archivo)
+  intl: ^0.19.0 # Revisa la última versión en pub.dev
+  # Para guardar datos simples (obligaciones, actividades) podríamos usar JSON
+  # No requiere paquete extra, pero sí manejo de archivos.
+
+  # Iconos estándar
+  cupertino_icons: ^1.0.2
 
 dev_dependencies:
   flutter_test:
